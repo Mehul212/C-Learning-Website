@@ -1,0 +1,23 @@
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+h1 {
+  color:grey;
+  font-family: verdana;
+  font-size: 50%;
+  display:inline;
+
+}
+body  {
+ 
+background-color:#9DC183 ;
+  font-family: courier;
+  font-size: 100%;
+}
+#logo{
+		font-size:90px;
+		display: block;
+	}

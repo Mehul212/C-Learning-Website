@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+function validateform(){  
+  var name=document.register.first.value;  
+
+  if (name==null || name==""){  
+  alert("First name can't be blank");  
+  return false;  
+}
+var nam=document.register.last.value;  
+
+  if (nam==null || nam==""){  
+  alert("Last name can't be blank");  
+  return false;  
+}
+
+
+  var x = document.register.email.value;
+  var atpos = x.indexOf("@");
+  var dotpos = x.lastIndexOf(".");
+  if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+    alert("Not a valid e-mail address");
+    return false;
+  }    
+
+
+
+var a = document.getElementById("psw").value;
+var b = document.getElementById("psw-repeat").value;
+  if (a==null || a==""){  
+  alert("Pass can't be blank");  
+  return false;  
+}
+
+  if (b==null || b==""){  
+  alert("Confirm Pass can't be blank");  
+  return false;  
+}
+  if(a!=b)
+  {alert("Password not same")
+  return false;
+    }
+  }
+</script> 
+<link rel="stylesheet" href="login.css">
+	<title>signup</title>
+</head>
+<body>
+		<div id="logo">
+      <img src="logo.gif" width=150px height=90px></img>
+      <h1>c++ programming website</h1>
+ </div>
+  <form action="reg.php" name="register" method="post" onsubmit="return validateform()">
+  <div class="center">
+    <h2>Register</h2>
+    <p>Please fill in this form to create an account.</p>
+    
+<label for="first"><b>First Name:</b></label>
+<input type ="text"  name="first"></br></br>
+<label for="last" ><b>Last Name:</b></label>
+<input type ="text"  name="last" size="50"></br></br>
+
+    <label for="email"><b>Email:</b></label>
+    <input type="text"  name="email" ><br><br>
+
+    <label for="psw"><b>Password:</b></label>
+    <input type="password"  name="psw" id="psw" ><br><br>
+
+    <label for="psw-repeat"><b>Repeat Password:</b></label>
+    <input type="password"  id="psw-repeat" ><br><br>
+    
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+
+
+    <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+  </div>
+</form>
+
+
+</body>
+</html>

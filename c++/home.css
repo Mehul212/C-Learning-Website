@@ -1,0 +1,57 @@
+
+h1 {
+  color:white;
+  font-family:century gothic;
+  font-size: 50%;
+  display:inline;
+
+}
+h2 {
+  color:white;
+  font-family: verdana;
+  font-size: 150%;
+  display:inline;
+
+}
+body  {
+ 
+background-color:black;
+  font-family: courier;
+  font-size: 100%;
+}
+footer
+{
+margin:10px;
+height:60px;
+border-radius:5px;
+clear:both;
+text-align:center;
+padding:15px;
+font-size:90%;
+color: white;
+display: block;
+}
+#logo{
+		font-size:90px;
+		display: block;
+	}
+#banner{
+	width: 100%;
+}
+footer a{
+	text-decoration: none;
+}
+.navigation a
+{
+	text-decoration: none;
+	color: white;
+	font-family:ariel;
+	padding:.2em 1em;
+}
+.concept a
+{
+	text-decoration: none;
+	color: grey;
+	font-family:ariel;
+	padding:.2em 1em;
+}
