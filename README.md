@@ -1,2 +1,2 @@
 # C-Learning-Website
-C++ Learning Website created as a part of web development curriculum.
+A basic website where a user can learn some basic concepts of C++
